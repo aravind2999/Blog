@@ -1,0 +1,16 @@
+<%- include("./header")%>
+
+
+<div class="container">
+    <h1>HELLOO to HOME</h1>
+    <% for (var i=0;i<journals.length;i++) { %>
+        <h1>
+            <%= journals[i].title %>
+        </h1>
+        <p>
+            <%= journals[i].writeup.substring(0,100)+'...'%>
+                <a href="post/<%= journals[i].title %>">Readmore</a>
+        </p>
+        <% } %>
+</div>
+
